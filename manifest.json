@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "CleanTwit",
+  "version": "1.0",
+  "description": "A Chrome Extension that removes the number of likes and retweets for a more unbiased feed",
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["./main.js"]
+    }
+  ]
+}
